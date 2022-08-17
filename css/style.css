@@ -7,18 +7,84 @@
 	text-decoration: none;
 }
 
+
 header{
     min-height: 9vh;
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: gray;
-    /* background */
+    justify-content: center;
+    background-color: black;
 }
 
-h1{
+header h1{
     font-size: 2.5rem;
-    color: white;
+    color: white; 
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#18acfe, #0166e1)  ;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.25); 
+}
+
+main form{
+    margin-top: 5%;
+    width: 35%;
+    height: 75vh;
+    background-color: #383c42;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0, 0.4) inset 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    padding: 2%;
+    display: flex ;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
+}
+main form .input-container{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main form .input-container input{
+    width: 90%;
+    height: 45px;
+    border-radius: 12px;
+    border: 0;
+    margin-top: 6px ;
+    color: #312e42;
+    padding: 8px 15px;
+    outline: 0;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0, 0.4) inset 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main form .input-container input:focus{
+    box-shadow: inset 1px  4px 7px rgba(0, 0, 0, 0.5);
+
+}
+
+main form .password-container{
+margin-top: 5%;
+width: 100%;
+position: relative;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+
+main form .password-container i{
+    position: absolute;
+    right: 8%;
+    top: 39%;
+    color: #777;
+    cursor: pointer;
+}
+
+main form .password-container #eye{
+    display: none;
 }
